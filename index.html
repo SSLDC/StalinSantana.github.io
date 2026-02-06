@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Stalin, desarrollador de software especializado en C#, Unity y Android.">
+    <meta name="keywords" content="programador, portfolio, C#, Unity, Android">
+    <title>Stalin | Software Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Stalin Santana Lozano</h1>
+        <p>Desarrollador de software | C# | Unity | Java</p>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#sobreMi">Sobre Mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sobreMi">
+        <p class="justificado">Hola, me llamo Stalin Santana. Soy programador especializado en desarrollo de aplicaciones multiplataforma y videojuegos, con experiencia en Java, C#, MySQL, HTML, CSS, motores de videojuegos y programación y consumo de microservicios RESTful. Me formé en la Escuela EDIB – Grupo Fleming, donde adquirí una sólida base en programación orientada a objetos y desarrollo de proyectos prácticos. Durante más de dos años, trabajé en proyectos personales y académicos, desarrollando sistemas complejos, páginas webs, motores de juego y aplicaciones multiplataforma. Me considero una persona comprometida, responsable y con iniciativa, con capacidad de aprendizaje autónomo y pasión por superarme continuamente. Disfruto del trabajo en equipo, la colaboración y los retos técnicos, y busco aportar valor con energía, enfoque y actitud positiva.</p>
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos Destacados</h2>
+
+        <div class="proyecto" style="background-image: url('assets/Fondo__Lily.jpeg');">
+             <h3>Lily – Novela gráfica de naves</h3>
+             <p class="justificado">Desarrollé una novela gráfica con temática de naves, combinando historia, estilo visual y animaciones. Implementé sistemas de texto, menús dinámicos y animaciones de personajes y fondos, usando C# y Unity para crear una experiencia atractiva y visualmente coherente.</p>
+            <a class="boton" href="https://drive.google.com/file/d/1gCwTT_bgI0XF5Zox4gh3sP6xsfMEsG9G/view?usp=drive_link" target="_blank">Ver más / Código</a>
+        </div>
+
+        <div class="proyecto" style="background-image: url('assets/Fondo_Unvollendet.jpeg');">
+             <h3>Unvollendet – Sistema avanzado de juego por turnos</h3>
+            <p class="justificado">
+                Desarrollé <strong>Unvollendet</strong>, un proyecto de videojuego ambicioso que combina narrativa profunda, sistemas interactivos y arte visual único. Implementé un sistema de combate por turnos donde cada personaje tiene habilidades, tiempos de acción y animaciones propias, y desarrollé una IA avanzada para el jefe que toma decisiones estratégicas considerando la salud y defensa de los jugadores, así como elementos aleatorios para crear retos dinámicos.
+            </p>
+            <p class="justificado">
+                El juego integra escenas con actores reales y narrativa tipo novela gráfica, combinando elementos 2D y 3D en un estilo 2.5D, y permite a los jugadores tomar decisiones que desbloquean distintos finales. Este proyecto demuestra mi capacidad de diseñar sistemas complejos, estructurar código modular, implementar lógica de IA y gestionar interacciones entre múltiples componentes.
+            </p>
+            <a class="boton" href="https://drive.google.com/file/d/11gd04lDLLNz64PZBZJW-0amzENkE-Llt/view?usp=drive_link" target="_blank">Ver más / Código</a>
+        </div>
+    </section>
+
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <ul class="justificado">
+            <li><strong>Lenguajes de programación:</strong> C#, Java, Kotlin, HTML, CSS, MySQL</li>
+            <li><strong>Desarrollo de videojuegos:</strong> Unity, diseño de sistemas por turnos, IA de enemigos, animaciones, interacción de menús y narrativa tipo novela gráfica</li>
+            <li><strong>Desarrollo de aplicaciones y backend:</strong> Android Studio, .NET con Visual Studio, Spring Boot (básico), creación y consumo de microservicios RESTful</li>
+            <li><strong>Control de versiones y colaboración:</strong> Git & GitHub</li>
+            <li><strong>Otros conocimientos:</strong> lógica de programación avanzada, programación orientada a objetos, estructuras de datos y resolución de problemas complejos</li>
+        </ul>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Email: <a href="mailto:santanalozanostalindaniel@gmail.com">santanalozanostalindaniel@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/SSLDC" target="_blank">https://github.com/SSLDC</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/stalin-santana-lozano-79a490361" target="_blank">LinkedIn</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Stalin. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        const links = document.querySelectorAll('nav ul li a');
+        for (const link of links) {
+            link.addEventListener('click', smoothScroll);
+        }
+        function smoothScroll(e){
+            e.preventDefault();
+            const href = this.getAttribute('href');
+            document.querySelector(href).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
