@@ -2,7 +2,7 @@
 
 Mi portfolio personal online con mis proyectos de software y videojuegos.
 
-🔗 Web online: [(https://tuusuario.github.io)](https://ssldc.github.io/StalinSantana.github.io/)](https://ssldc.github.io/StalinSantana.github.io/)
+🔗 Web online: [(https://ssldc.github.io/StalinSantana.github.io/)](https://ssldc.github.io/StalinSantana.github.io/)
 
 Proyectos destacados:
 - Juego 1 – Sistema avanzado de turnos en Unity
