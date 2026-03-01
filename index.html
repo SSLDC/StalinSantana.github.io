@@ -11,7 +11,7 @@
 <body>
     <header>
         <h1>Stalin Santana Lozano</h1>
-        <p>Desarrollador de software | C# | Unity | Java</p>
+        <p>Software & Web Developer | Game Developer</p>
         <nav>
             <ul class="nav-links">
                 <li><a href="#sobreMi">Sobre Mí</a></li>
@@ -23,57 +23,139 @@
     </header>
 
     <section id="sobreMi">
-        <p class="justificado">Hola, me llamo Stalin Santana. Soy programador especializado en desarrollo de aplicaciones multiplataforma y videojuegos, con experiencia en Java, C#, MySQL, HTML, CSS, motores de videojuegos y programación y consumo de microservicios RESTful. Me formé en la Escuela EDIB – Grupo Fleming, donde adquirí una sólida base en programación orientada a objetos y desarrollo de proyectos prácticos. Durante más de dos años, trabajé en proyectos personales y académicos, desarrollando sistemas complejos, páginas webs, motores de juego y aplicaciones multiplataforma. Me considero una persona comprometida, responsable y con iniciativa, con capacidad de aprendizaje autónomo y pasión por superarme continuamente. Disfruto del trabajo en equipo, la colaboración y los retos técnicos, y busco aportar valor con energía, enfoque y actitud positiva.</p>
-    </section>
+        <p class="justificado">
+            Hola, me llamo Stalin Santana. Soy programador junior especializado en desarrollo de aplicaciones multiplataforma y videojuegos, con experiencia en Java, C#, MySQL, HTML, CSS, motores de videojuegos y programación y consumo de microservicios RESTful. Me formé en la Escuela EDIB – Grupo Fleming, donde adquirí una sólida base en programación orientada a objetos y desarrollo de proyectos prácticos. Durante más de dos años, trabajé en proyectos personales y académicos, creando sistemas con lógica compleja, motores de reglas, control de flujos de ejecución, páginas web y aplicaciones multiplataforma. Me considero una persona comprometida, responsable y con iniciativa, con capacidad de aprendizaje autónomo y pasión por superarme continuamente. Disfruto del trabajo en equipo, la colaboración y los retos técnicos, y busco aportar valor con energía, enfoque y actitud positiva.
+        </p>
+</section>
 
     <section id="proyectos">
         <h2>Proyectos Destacados</h2>
 
-        <div class="proyecto" style="background-image: url('assets/Fondo__Lily.jpeg');">
-             <h3>Lily – Novela gráfica de naves</h3>
-             <p class="justificado">Desarrollé una novela gráfica con temática de naves, combinando historia, estilo visual y animaciones. Implementé sistemas de texto, menús dinámicos y animaciones de personajes y fondos, usando C# y Unity para crear una experiencia atractiva y visualmente coherente.</p>
-            <a class="boton" href="https://drive.google.com/file/d/1gCwTT_bgI0XF5Zox4gh3sP6xsfMEsG9G/view?usp=drive_link" target="_blank">Ver más / Código</a>
+            <div class="proyecto" style="background-image: url('assets/Fondo__Lily.jpeg');">
+            <h3 class="toggle">Lily – Novela gráfica de naves</h3>
+            <div class="contenido">
+                <p class="justificado">
+                    Desarrollé una novela gráfica con temática de naves, combinando historia, estilo visual y animaciones.
+                    Implementé sistemas de texto, menús dinámicos y animaciones de personajes y fondos.
+                </p>
+
+                <p class="justificado">
+                    El proyecto incluye sistemas de decisiones narrativas, efectos visuales dinámicos
+                    y una estructura modular pensada para escalar la historia.
+                </p>
+
+                <br>
+
+                <video width="100%" height="315" controls autoplay muted loop>
+                <source src="videos/LilyVideo.mp4" type="video/mp4">
+                </video>
+
+                <a class="boton" href="https://drive.google.com/file/d/1RFxC8bYj7jcPn1__COw1PSow5bChvmk4/view?usp=drive_link" target="_blank">
+                    Ver más / Código
+                </a>
+            </div>
         </div>
 
         <div class="proyecto" style="background-image: url('assets/Fondo_Unvollendet.jpeg');">
-             <h3>Unvollendet – Sistema avanzado de juego por turnos</h3>
-            <p class="justificado">
-                Desarrollé <strong>Unvollendet</strong>, un proyecto de videojuego ambicioso que combina narrativa profunda, sistemas interactivos y arte visual único. Implementé un sistema de combate por turnos donde cada personaje tiene habilidades, tiempos de acción y animaciones propias, y desarrollé una IA avanzada para el jefe que toma decisiones estratégicas considerando la salud y defensa de los jugadores, así como elementos aleatorios para crear retos dinámicos.
-            </p>
-            <p class="justificado">
-                El juego integra escenas con actores reales y narrativa tipo novela gráfica, combinando elementos 2D y 3D en un estilo 2.5D, y permite a los jugadores tomar decisiones que desbloquean distintos finales. Este proyecto demuestra mi capacidad de diseñar sistemas complejos, estructurar código modular, implementar lógica de IA y gestionar interacciones entre múltiples componentes.
-            </p>
-            <a class="boton" href="https://drive.google.com/file/d/11gd04lDLLNz64PZBZJW-0amzENkE-Llt/view?usp=drive_link" target="_blank">Ver más / Código</a>
+            <h3 class="toggle">Unvollendet – Sistema avanzado de juego por turnos</h3>
+
+            <div class="contenido">
+                <p class="justificado">
+                Proyecto ambicioso que combina narrativa profunda, sistemas interactivos y arte visual único. Implementé un sistema de combate por turnos, IA estratégica para jefe final, sistema de decisiones con múltiples finales y mezcla 2D/3D en estilo 2.5D.
+                </p>
+
+                <p class="justificado">
+                Mi mayor logro técnico fue el diseño e implementación de una lógica de decisión avanzada para la IA del jefe. Desarrollé un sistema que evalúa dinámicamente múltiples variables (estado, vida, defensa, prioridades y condiciones simultáneas) y toma decisiones estratégicas en tiempo real utilizando estructuras enlazadas y comparaciones condicionales complejas. La IA no actúa de forma aleatoria simple, sino que analiza el contexto completo antes de ejecutar una acción, incorporando además probabilidades controladas para generar comportamientos variables pero coherentes.
+                </p>
+
+                <br>
+
+                <p class="justificado">
+                También diseñé un sistema completo de gestión de turnos basado en estados, controlando transiciones, validaciones, bloqueos de entrada, ejecución asincrónica mediante coroutines y sincronización con animaciones y eventos. Implementé control de flujo robusto para evitar estados inválidos, gestión de recursos (vida, energía, objetos), verificación de condiciones límite y control automático del ciclo principal del sistema.
+                </p>
+
+                <br>
+
+                <p class="justificado">
+                Este proyecto demuestra que puedo desarrollar sistemas con lógica compleja, manejar flujos de ejecución, y crear soluciones modulares que se adaptan a distintas situaciones.
+                </p>
+
+                <br>
+
+                 <video width="100%" height="315" controls autoplay muted loop>
+                <source src="videos/Unvollendet.mp4" type="video/mp4">
+                </video>
+
+                <a class="boton" href="https://drive.google.com/file/d/1rHnaw7DBjkRj874t_h7w7XE9qm8OmLJ7/view?usp=drive_link" target="_blank">
+                    Ver más / Código
+                </a>
+            </div>
+        </div>
+
+        <div class="proyecto proyecto-azul">
+            <h3 class="toggle">Sistema de movimientos, físicas y desarrollo de herramientas personalizadas</h3>
+
+            <div class="contenido">
+               <p class="justificado">
+                Desarrollé una demo técnica enfocada en arquitectura modular, control de estados complejos y diseño de sistemas desacoplados. Implementé una estructura clara separando responsabilidades entre control de entrada, físicas, gestión de cámara y lógica de comportamiento, aplicando principios de organización y escalabilidad del código. Utilicé patrones como Singleton para la gestión centralizada de la cámara y diseñé componentes reutilizables configurables desde el inspector.
+                </p>
+
+                <br>
+
+                <p class="justificado">
+                El sistema incluye gestión avanzada de estados (dash, salto variable, caída, colisiones laterales, corrección de esquinas), control condicional de flujo y bloqueo de acciones según contexto, lo que demuestra capacidad para manejar reglas complejas y múltiples transiciones de estado. Implementé lógica basada en eventos mediante triggers, interpolaciones temporizadas con coroutines y ajustes dinámicos de parámetros (como damping de cámara según velocidad), evidenciando dominio de programación reactiva y procesos asincrónicos.
+                </p>
+
+                <br>
+
+                <p class="justificado">
+                Además, desarrollé herramientas personalizadas mediante un Editor extendido que permite configurar dinámicamente cámaras, direcciones y parámetros de comportamiento sin modificar el código, demostrando capacidad para crear herramientas internas y sistemas configurables. El proyecto refleja habilidades en diseño robusto, resolución de edge cases y estructuración de código escalable.
+                </p>
+
+                <br>
+
+                 <video width="100%" height="315" controls autoplay muted loop>
+                <source src="videos/MovimientoFísicas.mp4" type="video/mp4">
+                </video>
+
+                <a class="boton" href="https://drive.google.com/file/d/1TyMyQ9ML3T6inlBwTXnspB4wFg9d6TqQ/view?usp=drive_link" target="_blank">
+                    Ver más / Código
+                </a>
+            </div>
         </div>
     </section>
 
     <section id="habilidades">
         <h2>Habilidades</h2>
+        <br>
         <ul class="justificado">
-            <li><strong>Lenguajes de programación:</strong> C#, Java, Kotlin, HTML, CSS, MySQL</li>
-            <li><strong>Desarrollo de videojuegos:</strong> Unity, diseño de sistemas por turnos, IA de enemigos, animaciones, interacción de menús y narrativa tipo novela gráfica</li>
-            <li><strong>Desarrollo de aplicaciones y backend:</strong> Android Studio, .NET con Visual Studio, Spring Boot (básico), creación y consumo de microservicios RESTful</li>
-            <li><strong>Control de versiones y colaboración:</strong> Git & GitHub</li>
-            <li><strong>Otros conocimientos:</strong> lógica de programación avanzada, programación orientada a objetos, estructuras de datos y resolución de problemas complejos</li>
+            <li><strong>Lenguajes de programación:</strong> C#, Java, Kotlin, HTML, CSS, MySQL, JavaScript (básico)</li>
+            <li><strong>Desarrollo de videojuegos:</strong> Unity, diseño de sistemas por turnos, IA de enemigos, animaciones, interacción de menús, narrativa tipo novela gráfica, control de flujos de juego y lógica modular</li>
+            <li><strong>Desarrollo de aplicaciones y backend:</strong> Android Studio, .NET con Visual Studio, Spring Boot (básico), creación y consumo de microservicios RESTful, gestión de eventos y validaciones</li>
+            <li><strong>Control de versiones y colaboración:</strong> Git & GitHub.</li>
+            <li><strong>Otros conocimientos:</strong> lógica de programación avanzada, programación orientada a objetos, estructuras de datos, resolución de problemas complejos, desarrollo de sistemas basados en reglas y flujos de ejecución</li>
         </ul>
     </section>
-
     <section id="contacto">
         <h2>Contacto</h2>
+        <br>
         <p>Email: <a href="mailto:santanalozanostalindaniel@gmail.com">santanalozanostalindaniel@gmail.com</a></p>
         <p>GitHub: <a href="https://github.com/SSLDC" target="_blank">https://github.com/SSLDC</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/stalin-santana-lozano-79a490361" target="_blank">LinkedIn</a></p>
+        <p>Linkedin: <a href="https://www.linkedin.com/in/stalin-santana-lozano-79a490361" target="_blank">Linkedin</a></p>
     </section>
 
     <footer>
         <p>&copy; 2026 Stalin. Todos los derechos reservados.</p>
     </footer>
 
-    <script>
+   <script>
+        // ===== Smooth scroll del menú =====
         const links = document.querySelectorAll('nav ul li a');
+
         for (const link of links) {
             link.addEventListener('click', smoothScroll);
         }
+
         function smoothScroll(e){
             e.preventDefault();
             const href = this.getAttribute('href');
@@ -81,6 +163,16 @@
                 behavior: 'smooth'
             });
         }
+
+        // ===== Sistema desplegable de proyectos =====
+        const toggles = document.querySelectorAll('.toggle');
+
+        toggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const proyecto = toggle.parentElement;
+                proyecto.classList.toggle('activo');
+            });
+        });
     </script>
 </body>
 </html>
