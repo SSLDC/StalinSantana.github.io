@@ -1,10 +1,13 @@
-# Portfolio de Stalin
+Stalin's Portfolio
 
-Mi portfolio personal online con mis proyectos de software y videojuegos.
+My personal online portfolio showcasing my software and game development projects.
 
-🔗 Web online: [(https://ssldc.github.io/StalinSantana.github.io/)](https://ssldc.github.io/StalinSantana.github.io/)
+🔗 Online website: (https://ssldc.github.io/StalinSantana.github.io/)
 
-Proyectos destacados:
-- Proyecto 1 – Novela gráfica de naves.
-- Proyecto 2 – Proyecto más ambicioso con IA y lógica compleja.
-- Proyecto 3 - Sistema de movimientos, físicas y desarrollo de herramientas personalizadas.
+Featured Projects:
+
+Project 1 – Space-themed visual novel.
+
+Project 2 – More ambitious project with AI and complex logic.
+
+Project 3 – Movement system, physics, and development of custom tools.
