@@ -1,4 +1,4 @@
-Stalin's Portfolio
+# Stalin's Portfolio
 
 My personal online portfolio showcasing my software and game development projects.
 
