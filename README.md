@@ -2,7 +2,7 @@
 
 This repository contains the technical descriptions of my main software and game development projects.
 
-🔗 Online portfolio: ((https://ssldc.github.io/StalinSantana.github.io/))
+🔗 Online portfolio: (https://ssldc.github.io/StalinSantana.github.io/)
 
 # Lily – Space-Themed Visual Novel
 
