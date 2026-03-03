@@ -16,9 +16,7 @@ Dynamic menu system
 
 Character and background animation control
 
-Modular narrative structure designed for scalability
-
-Branching decision-making system
+Modular narrative structure
 
 Dynamic visual effects
 
