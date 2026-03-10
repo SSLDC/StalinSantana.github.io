@@ -173,3 +173,93 @@ body::before {
 video {
     filter: brightness(1.1) contrast(1.05);
 }
+
+
+@media (max-width: 1024px) {
+
+body{
+    padding: 30px 40px;
+}
+
+header h1{
+    font-size: 2.3rem;
+}
+
+header p{
+    font-size: 1.1rem;
+}
+
+.nav-links{
+    gap:20px;
+}
+
+.proyecto{
+    padding:40px 25px;
+}
+
+}
+
+
+@media (max-width: 768px){
+
+body{
+    padding:20px;
+}
+
+header h1{
+    font-size:1.8rem;
+}
+
+header p{
+    font-size:1rem;
+}
+
+.nav-links{
+    flex-direction:column;
+    gap:10px;
+}
+
+.nav-links a{
+    font-size:0.9rem;
+}
+
+h2{
+    font-size:1.6rem;
+}
+
+.proyecto{
+    padding:30px 20px;
+}
+
+.proyecto:hover{
+    transform:none;
+}
+video{
+    height:auto;
+}
+
+}
+@media (max-width:480px){
+
+header h1{
+    font-size:1.5rem;
+}
+
+h2{
+    font-size:1.4rem;
+}
+
+ul{
+    padding-left:15px;
+}
+
+.proyecto{
+    padding:25px 15px;
+}
+
+.boton{
+    width:100%;
+    text-align:center;
+}
+
+}
