@@ -10,6 +10,12 @@
     
 </head>
 <body>
+
+    <div class="language-switcher">
+        <button id="btn-en" class="lang-btn active">EN</button>
+        <button id="btn-es" class="lang-btn">ES</button>
+    </div>
+    
     <header>
         <h1>Stalin Santana Lozano</h1>
         <p>Software & Web Developer | Game Developer</p>
@@ -206,135 +212,144 @@ Me considero una persona constante, con iniciativa y capacidad de aprender por m
 
   <script>
 
-    // =========================================
-    // ===== SISTEMA DE IDIOMAS ============
-    // =========================================
+document.addEventListener("DOMContentLoaded", () => {
 
     const translations = {
 
         en: {
 
-            nav_about: "About Me",
-            nav_projects: "Projects",
-            nav_skills: "Skills",
-            nav_contact: "Contact",
+            nav1: "About Me",
+            nav2: "Projects",
+            nav3: "Skills",
+            nav4: "Contact",
 
             subtitle: "Software & Web Developer | Game Developer",
 
             about: `
-Hi, my name is Stalin Santana. I am a junior programmer focused on cross-platform application and video game development. I have experience working with Java, C#, MySQL, HTML, CSS, game engines, and REST APIs.
+Hi, my name is Stalin Santana. I am a junior programmer focused on cross-platform application and video game development.
 
-I studied at EDIB – Grupo Fleming, where I learned object-oriented programming and worked on practical projects from scratch. Since then, I have spent more than two years creating personal and academic projects involving complex logic systems, rule engines, cross-platform applications, and Unity games.
+I have experience with Java, C#, MySQL, HTML, CSS, REST APIs, and Unity game development.
 
-I enjoy building things that truly work, not just theoretical concepts. I have worked on turn-based combat systems, AI with dynamic decision-making, modular architectures, and editor tools.
-
-I consider myself a consistent and proactive person with strong self-learning skills. I enjoy solving technical problems and facing challenges that push me to improve. I work well in teams, adapt quickly, and always try to bring value to every project.
+I enjoy building real systems, scalable gameplay architectures, AI systems, and modular tools.
 `,
 
             projects: "Featured Projects",
 
-            lily_title: "Lily – Space Graphic Novel",
-            lily_desc1: "Graphic novel with a spaceship theme combining narrative, visuals, and animations to create an interactive experience.",
-            lily_desc2: "Implemented dialogue systems, dynamic menus, and character/background animations while maintaining narrative consistency and visual rhythm.",
-            lily_desc3: "The project includes narrative choices affecting the story and a modular structure designed for future content expansion.",
+            lily: "Lily – Space Graphic Novel",
+            unvoll: "Unvollendet – Advanced Turn-Based System",
+            move: "Movement, Physics & Custom Tools System",
 
-            un_title: "Unvollendet – Advanced Turn-Based System",
-            un_desc1: "Project combining narrative, gameplay systems, and 2D/3D integration in a 2.5D environment.",
-            un_desc2: "Designed a boss AI capable of analyzing health, defense, combat states, and priorities in real time.",
-            un_desc3: "Developed a state-based turn system with transitions, validations, input locking, and asynchronous coroutine execution.",
-            un_desc4: "This project demonstrates my ability to create scalable and modular gameplay systems.",
-
-            mov_title: "Movement, Physics & Custom Tools System",
-            mov_desc1: "Technical demo focused on modular architecture and advanced state systems in Unity.",
-            mov_desc2: "Separated input, physics, camera, and behavior logic for scalable clean code.",
-            mov_desc3: "Includes dash, variable jump, falls, side collisions, corner correction, and dynamic camera systems.",
-            mov_desc4: "Also developed custom Unity editor tools to configure systems without touching code.",
+            code: "View Code",
 
             skills: "Skills",
 
+            skill1: "<strong>Programming Languages:</strong> C#, Java, Kotlin, HTML, CSS, MySQL, JavaScript (basic level)",
+
+            skill2: "<strong>Game Development (Unity):</strong> design and implementation of turn-based systems, enemy AI, animations, menu interactions, visual novel narrative systems, and modular gameplay logic",
+
+            skill3: "<strong>Application & Backend Development:</strong> Android Studio, .NET with Visual Studio, Spring Boot (basic), REST API creation and consumption, event handling and validations",
+
+            skill4: "<strong>Software Engineering:</strong> object-oriented programming, data structures, advanced programming logic, rule-based systems and execution flow architecture",
+
+            skill5: "<strong>Version Control:</strong> Git & GitHub for project management and collaborative work",
+
             contact: "Contact",
 
-            code: "View Code"
+            rights: "All rights reserved."
         },
 
         es: {
 
-            nav_about: "Sobre Mí",
-            nav_projects: "Proyectos",
-            nav_skills: "Habilidades",
-            nav_contact: "Contacto",
+            nav1: "Sobre Mí",
+            nav2: "Proyectos",
+            nav3: "Habilidades",
+            nav4: "Contacto",
 
             subtitle: "Software & Web Developer | Game Developer",
 
-            about: document.querySelector("#sobreMi .justificado").innerHTML,
+            about: `
+Hola, me llamo Stalin Santana. Soy programador junior enfocado en desarrollo de aplicaciones multiplataforma y videojuegos.
+
+Tengo experiencia trabajando con Java, C#, MySQL, HTML, CSS, APIs REST y desarrollo de videojuegos en Unity.
+
+Me gusta construir sistemas reales, arquitecturas escalables, IA y herramientas modulares.
+`,
 
             projects: "Proyectos Destacados",
 
-            lily_title: "Lily – Novela gráfica de naves",
-            lily_desc1: "Novela gráfica con temática de naves espaciales, combinando narrativa, estilo visual y animaciones para crear una experiencia interactiva.",
-            lily_desc2: "Implementé sistemas de diálogo, menús dinámicos y animaciones de personajes y fondos.",
-            lily_desc3: "El proyecto incluye decisiones narrativas con impacto en la historia y estructura modular.",
+            lily: "Lily – Novela gráfica de naves",
+            unvoll: "Unvollendet – Sistema avanzado de juego por turnos",
+            move: "Sistema de movimientos, físicas y herramientas personalizadas",
 
-            un_title: "Unvollendet – Sistema avanzado de juego por turnos",
-            un_desc1: "Proyecto que combina narrativa, sistemas jugables e integración 2D/3D en un entorno 2.5D.",
-            un_desc2: "Diseñé una IA de jefe que analiza variables del combate en tiempo real.",
-            un_desc3: "También desarrollé un sistema de turnos basado en estados y ejecución asincrónica.",
-            un_desc4: "Este proyecto demuestra mi capacidad para crear sistemas complejos y escalables.",
-
-            mov_title: "Sistema de movimientos, físicas y herramientas personalizadas",
-            mov_desc1: "Demo técnica centrada en arquitectura modular y sistemas desacoplados.",
-            mov_desc2: "Separé entrada, físicas y cámara para mantener código limpio y escalable.",
-            mov_desc3: "Incluye dash, salto variable, colisiones laterales y ajustes dinámicos de cámara.",
-            mov_desc4: "También desarrollé herramientas personalizadas dentro del editor de Unity.",
+            code: "Ver código",
 
             skills: "Habilidades",
 
+            skill1: "<strong>Lenguajes de programación:</strong> C#, Java, Kotlin, HTML, CSS, MySQL, JavaScript (nivel básico)",
+
+            skill2: "<strong>Desarrollo de videojuegos (Unity):</strong> diseño e implementación de sistemas por turnos, IA de enemigos, animaciones, interacción de menús, narrativa tipo novela gráfica y lógica modular de gameplay",
+
+            skill3: "<strong>Desarrollo de aplicaciones y backend:</strong> Android Studio, .NET con Visual Studio, Spring Boot (básico), APIs REST, validaciones y gestión de eventos",
+
+            skill4: "<strong>Ingeniería de software:</strong> programación orientada a objetos, estructuras de datos, lógica avanzada y sistemas basados en reglas",
+
+            skill5: "<strong>Control de versiones:</strong> Git & GitHub para gestión de proyectos y trabajo colaborativo",
+
             contact: "Contacto",
 
-            code: "Ver código"
+            rights: "Todos los derechos reservados."
         }
     };
-
 
     function changeLanguage(lang){
 
         const t = translations[lang];
 
+        // NAV
+        const nav = document.querySelectorAll(".nav-links a");
+
+        nav[0].innerHTML = t.nav1;
+        nav[1].innerHTML = t.nav2;
+        nav[2].innerHTML = t.nav3;
+        nav[3].innerHTML = t.nav4;
+
+        // SUBTITLE
         document.querySelector("header p").innerHTML = t.subtitle;
 
-        document.querySelectorAll(".nav-links a")[0].innerHTML = t.nav_about;
-        document.querySelectorAll(".nav-links a")[1].innerHTML = t.nav_projects;
-        document.querySelectorAll(".nav-links a")[2].innerHTML = t.nav_skills;
-        document.querySelectorAll(".nav-links a")[3].innerHTML = t.nav_contact;
-
+        // ABOUT
         document.querySelector("#sobreMi .justificado").innerHTML = t.about;
 
+        // PROJECT TITLE
         document.querySelector("#proyectos h2").innerHTML = t.projects;
 
-        const proyectos = document.querySelectorAll(".proyecto");
+        // PROJECTS
+        const proyectos = document.querySelectorAll(".toggle");
 
-        proyectos[0].querySelector("h3").innerHTML = t.lily_title;
-        proyectos[0].querySelectorAll("p")[0].innerHTML = t.lily_desc1;
-        proyectos[0].querySelectorAll("p")[1].innerHTML = t.lily_desc2;
-        proyectos[0].querySelectorAll("p")[2].innerHTML = t.lily_desc3;
-        proyectos[0].querySelector(".boton").innerHTML = t.code;
+        proyectos[0].innerHTML = t.lily;
+        proyectos[1].innerHTML = t.unvoll;
+        proyectos[2].innerHTML = t.move;
 
-        proyectos[1].querySelector("h3").innerHTML = t.un_title;
-        proyectos[1].querySelectorAll("p")[0].innerHTML = t.un_desc1;
-        proyectos[1].querySelectorAll("p")[1].innerHTML = t.un_desc2;
-        proyectos[1].querySelectorAll("p")[2].innerHTML = t.un_desc3;
-        proyectos[1].querySelectorAll("p")[3].innerHTML = t.un_desc4;
-        proyectos[1].querySelector(".boton").innerHTML = t.code;
+        // BUTTONS
+        document.querySelectorAll(".boton").forEach(btn => {
+            btn.innerHTML = t.code;
+        });
 
-        proyectos[2].querySelector("h3").innerHTML = t.mov_title;
-        proyectos[2].querySelectorAll("p")[0].innerHTML = t.mov_desc1;
-        proyectos[2].querySelectorAll("p")[1].innerHTML = t.mov_desc2;
-        proyectos[2].querySelectorAll("p")[2].innerHTML = t.mov_desc3;
-        proyectos[2].querySelectorAll("p")[3].innerHTML = t.mov_desc4;
-        proyectos[2].querySelector(".boton").innerHTML = t.code;
-
+        // SKILLS TITLE
         document.querySelector("#habilidades h2").innerHTML = t.skills;
+
+        // SKILLS CONTENT
+        const skills = document.querySelectorAll("#habilidades li");
+
+        skills[0].innerHTML = t.skill1;
+        skills[1].innerHTML = t.skill2;
+        skills[2].innerHTML = t.skill3;
+        skills[3].innerHTML = t.skill4;
+        skills[4].innerHTML = t.skill5;
+
         document.querySelector("#contacto h2").innerHTML = t.contact;
+
+        document.querySelector("footer p").innerHTML =
+            `&copy; 2026 Stalin. ${t.rights}`;
 
         document.getElementById("btn-en").classList.remove("active");
         document.getElementById("btn-es").classList.remove("active");
@@ -342,74 +357,72 @@ I consider myself a consistent and proactive person with strong self-learning sk
         document.getElementById(`btn-${lang}`).classList.add("active");
     }
 
+    document.getElementById("btn-en")
+        .addEventListener("click", () => {
 
-    // ===== Idioma por defecto =====
-    changeLanguage("en");
-
-    document.getElementById("btn-en").addEventListener("click", () => {
         changeLanguage("en");
+
     });
 
-    document.getElementById("btn-es").addEventListener("click", () => {
+    document.getElementById("btn-es")
+        .addEventListener("click", () => {
+
         changeLanguage("es");
+
     });
 
-
-    // =========================================
-    // ===== Smooth scroll ============
-    // =========================================
+    changeLanguage("en");
 
     const links = document.querySelectorAll('nav ul li a');
 
-    for (const link of links) {
-        link.addEventListener('click', smoothScroll);
-    }
+    links.forEach(link => {
 
-    function smoothScroll(e){
-        e.preventDefault();
-        const href = this.getAttribute('href');
-        document.querySelector(href).scrollIntoView({
-            behavior: 'smooth'
+        link.addEventListener('click', function(e){
+
+            e.preventDefault();
+
+            const href = this.getAttribute('href');
+
+            document.querySelector(href).scrollIntoView({
+                behavior:'smooth'
+            });
+
         });
-    }
 
-    // =========================================
-    // ===== Sistema desplegable ============
-    // =========================================
+    });
 
     const toggles = document.querySelectorAll('.toggle');
 
     toggles.forEach(toggle => {
-        toggle.addEventListener('click', () => {
-            const proyecto = toggle.parentElement;
-            proyecto.classList.toggle('activo');
-        });
-    });
 
-    // =========================================
-    // ===== PARALLAX ============
-    // =========================================
+        toggle.addEventListener('click', () => {
+
+            const proyecto = toggle.parentElement;
+
+            proyecto.classList.toggle('activo');
+
+        });
+
+    });
 
     window.addEventListener("scroll", () => {
 
         const scrollY = window.scrollY;
 
-        document.querySelectorAll(".proyecto").forEach((card, index) => {
+        document.querySelectorAll(".proyecto")
+            .forEach((card, index) => {
 
-            const speed = 0.2 + (index * 0.05);
+            const speed = 0.15 + (index * 0.08);
 
-            card.style.backgroundPositionY = `${scrollY * speed}px`;
+            card.style.backgroundPositionY =
+                `${scrollY * speed}px`;
 
         });
 
     });
 
+});
+
 </script>
 </body>
-    
-<div class="language-switcher">
-    <button id="btn-en" class="lang-btn active">EN</button>
-    <button id="btn-es" class="lang-btn">ES</button>
-</div>
-    
 </html>
