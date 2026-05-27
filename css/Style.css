@@ -301,3 +301,145 @@ ul{
 }
 
 }
+
+
+/* ========================================= */
+/* ===== SELECTOR DE IDIOMA ===== */
+/* ========================================= */
+
+.language-switcher{
+    position:fixed;
+    top:20px;
+    left:20px;
+    z-index:9999;
+
+    display:flex;
+    gap:12px;
+
+    backdrop-filter:blur(10px);
+
+    animation:floatUI 3s ease-in-out infinite;
+}
+
+.lang-btn{
+
+    padding:12px 20px;
+
+    border:none;
+    border-radius:12px;
+
+    background:linear-gradient(135deg,#ff0044,#ff66aa);
+
+    color:white;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.35s;
+
+    box-shadow:
+        0 0 10px #ff0044,
+        0 0 20px rgba(255,0,68,0.5);
+
+    font-family:'Press Start 2P', sans-serif;
+}
+
+.lang-btn:hover{
+
+    transform:
+        scale(1.12)
+        rotate(-3deg);
+
+    box-shadow:
+        0 0 20px #ff66aa,
+        0 0 40px rgba(255,0,68,0.8);
+
+}
+
+.lang-btn.active{
+
+    background:linear-gradient(135deg,#00c3ff,#0077ff);
+
+    box-shadow:
+        0 0 20px #00c3ff,
+        0 0 40px rgba(0,195,255,0.8);
+
+    transform:scale(1.08);
+}
+
+
+/* ========================================= */
+/* ===== Animación flotante ===== */
+/* ========================================= */
+
+@keyframes floatUI{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-6px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+
+/* ========================================= */
+/* ===== Efecto Parallax mejorado ===== */
+/* ========================================= */
+
+.proyecto{
+
+    background-attachment:fixed;
+
+    background-repeat:no-repeat;
+
+}
+
+
+/* ========================================= */
+/* ===== Glow al entrar ===== */
+/* ========================================= */
+
+body{
+
+    animation:fadeInBody 1.5s ease;
+}
+
+@keyframes fadeInBody{
+
+    from{
+        opacity:0;
+        transform:scale(1.02);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+
+}
+
+@media(max-width:768px){
+
+    .language-switcher{
+
+        top:10px;
+        left:10px;
+
+        gap:8px;
+    }
+
+    .lang-btn{
+
+        padding:10px 14px;
+
+        font-size:0.7rem;
+    }
+
+}
