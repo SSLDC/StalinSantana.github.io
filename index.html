@@ -204,31 +204,212 @@ Me considero una persona constante, con iniciativa y capacidad de aprender por m
         <p>&copy; 2026 Stalin. Todos los derechos reservados.</p>
     </footer>
 
-   <script>
-        // ===== Smooth scroll del menú =====
-        const links = document.querySelectorAll('nav ul li a');
+  <script>
 
-        for (const link of links) {
-            link.addEventListener('click', smoothScroll);
+    // =========================================
+    // ===== SISTEMA DE IDIOMAS ============
+    // =========================================
+
+    const translations = {
+
+        en: {
+
+            nav_about: "About Me",
+            nav_projects: "Projects",
+            nav_skills: "Skills",
+            nav_contact: "Contact",
+
+            subtitle: "Software & Web Developer | Game Developer",
+
+            about: `
+Hi, my name is Stalin Santana. I am a junior programmer focused on cross-platform application and video game development. I have experience working with Java, C#, MySQL, HTML, CSS, game engines, and REST APIs.
+
+I studied at EDIB – Grupo Fleming, where I learned object-oriented programming and worked on practical projects from scratch. Since then, I have spent more than two years creating personal and academic projects involving complex logic systems, rule engines, cross-platform applications, and Unity games.
+
+I enjoy building things that truly work, not just theoretical concepts. I have worked on turn-based combat systems, AI with dynamic decision-making, modular architectures, and editor tools.
+
+I consider myself a consistent and proactive person with strong self-learning skills. I enjoy solving technical problems and facing challenges that push me to improve. I work well in teams, adapt quickly, and always try to bring value to every project.
+`,
+
+            projects: "Featured Projects",
+
+            lily_title: "Lily – Space Graphic Novel",
+            lily_desc1: "Graphic novel with a spaceship theme combining narrative, visuals, and animations to create an interactive experience.",
+            lily_desc2: "Implemented dialogue systems, dynamic menus, and character/background animations while maintaining narrative consistency and visual rhythm.",
+            lily_desc3: "The project includes narrative choices affecting the story and a modular structure designed for future content expansion.",
+
+            un_title: "Unvollendet – Advanced Turn-Based System",
+            un_desc1: "Project combining narrative, gameplay systems, and 2D/3D integration in a 2.5D environment.",
+            un_desc2: "Designed a boss AI capable of analyzing health, defense, combat states, and priorities in real time.",
+            un_desc3: "Developed a state-based turn system with transitions, validations, input locking, and asynchronous coroutine execution.",
+            un_desc4: "This project demonstrates my ability to create scalable and modular gameplay systems.",
+
+            mov_title: "Movement, Physics & Custom Tools System",
+            mov_desc1: "Technical demo focused on modular architecture and advanced state systems in Unity.",
+            mov_desc2: "Separated input, physics, camera, and behavior logic for scalable clean code.",
+            mov_desc3: "Includes dash, variable jump, falls, side collisions, corner correction, and dynamic camera systems.",
+            mov_desc4: "Also developed custom Unity editor tools to configure systems without touching code.",
+
+            skills: "Skills",
+
+            contact: "Contact",
+
+            code: "View Code"
+        },
+
+        es: {
+
+            nav_about: "Sobre Mí",
+            nav_projects: "Proyectos",
+            nav_skills: "Habilidades",
+            nav_contact: "Contacto",
+
+            subtitle: "Software & Web Developer | Game Developer",
+
+            about: document.querySelector("#sobreMi .justificado").innerHTML,
+
+            projects: "Proyectos Destacados",
+
+            lily_title: "Lily – Novela gráfica de naves",
+            lily_desc1: "Novela gráfica con temática de naves espaciales, combinando narrativa, estilo visual y animaciones para crear una experiencia interactiva.",
+            lily_desc2: "Implementé sistemas de diálogo, menús dinámicos y animaciones de personajes y fondos.",
+            lily_desc3: "El proyecto incluye decisiones narrativas con impacto en la historia y estructura modular.",
+
+            un_title: "Unvollendet – Sistema avanzado de juego por turnos",
+            un_desc1: "Proyecto que combina narrativa, sistemas jugables e integración 2D/3D en un entorno 2.5D.",
+            un_desc2: "Diseñé una IA de jefe que analiza variables del combate en tiempo real.",
+            un_desc3: "También desarrollé un sistema de turnos basado en estados y ejecución asincrónica.",
+            un_desc4: "Este proyecto demuestra mi capacidad para crear sistemas complejos y escalables.",
+
+            mov_title: "Sistema de movimientos, físicas y herramientas personalizadas",
+            mov_desc1: "Demo técnica centrada en arquitectura modular y sistemas desacoplados.",
+            mov_desc2: "Separé entrada, físicas y cámara para mantener código limpio y escalable.",
+            mov_desc3: "Incluye dash, salto variable, colisiones laterales y ajustes dinámicos de cámara.",
+            mov_desc4: "También desarrollé herramientas personalizadas dentro del editor de Unity.",
+
+            skills: "Habilidades",
+
+            contact: "Contacto",
+
+            code: "Ver código"
         }
+    };
 
-        function smoothScroll(e){
-            e.preventDefault();
-            const href = this.getAttribute('href');
-            document.querySelector(href).scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
 
-        // ===== Sistema desplegable de proyectos =====
-        const toggles = document.querySelectorAll('.toggle');
+    function changeLanguage(lang){
 
-        toggles.forEach(toggle => {
-            toggle.addEventListener('click', () => {
-                const proyecto = toggle.parentElement;
-                proyecto.classList.toggle('activo');
-            });
+        const t = translations[lang];
+
+        document.querySelector("header p").innerHTML = t.subtitle;
+
+        document.querySelectorAll(".nav-links a")[0].innerHTML = t.nav_about;
+        document.querySelectorAll(".nav-links a")[1].innerHTML = t.nav_projects;
+        document.querySelectorAll(".nav-links a")[2].innerHTML = t.nav_skills;
+        document.querySelectorAll(".nav-links a")[3].innerHTML = t.nav_contact;
+
+        document.querySelector("#sobreMi .justificado").innerHTML = t.about;
+
+        document.querySelector("#proyectos h2").innerHTML = t.projects;
+
+        const proyectos = document.querySelectorAll(".proyecto");
+
+        proyectos[0].querySelector("h3").innerHTML = t.lily_title;
+        proyectos[0].querySelectorAll("p")[0].innerHTML = t.lily_desc1;
+        proyectos[0].querySelectorAll("p")[1].innerHTML = t.lily_desc2;
+        proyectos[0].querySelectorAll("p")[2].innerHTML = t.lily_desc3;
+        proyectos[0].querySelector(".boton").innerHTML = t.code;
+
+        proyectos[1].querySelector("h3").innerHTML = t.un_title;
+        proyectos[1].querySelectorAll("p")[0].innerHTML = t.un_desc1;
+        proyectos[1].querySelectorAll("p")[1].innerHTML = t.un_desc2;
+        proyectos[1].querySelectorAll("p")[2].innerHTML = t.un_desc3;
+        proyectos[1].querySelectorAll("p")[3].innerHTML = t.un_desc4;
+        proyectos[1].querySelector(".boton").innerHTML = t.code;
+
+        proyectos[2].querySelector("h3").innerHTML = t.mov_title;
+        proyectos[2].querySelectorAll("p")[0].innerHTML = t.mov_desc1;
+        proyectos[2].querySelectorAll("p")[1].innerHTML = t.mov_desc2;
+        proyectos[2].querySelectorAll("p")[2].innerHTML = t.mov_desc3;
+        proyectos[2].querySelectorAll("p")[3].innerHTML = t.mov_desc4;
+        proyectos[2].querySelector(".boton").innerHTML = t.code;
+
+        document.querySelector("#habilidades h2").innerHTML = t.skills;
+        document.querySelector("#contacto h2").innerHTML = t.contact;
+
+        document.getElementById("btn-en").classList.remove("active");
+        document.getElementById("btn-es").classList.remove("active");
+
+        document.getElementById(`btn-${lang}`).classList.add("active");
+    }
+
+
+    // ===== Idioma por defecto =====
+    changeLanguage("en");
+
+    document.getElementById("btn-en").addEventListener("click", () => {
+        changeLanguage("en");
+    });
+
+    document.getElementById("btn-es").addEventListener("click", () => {
+        changeLanguage("es");
+    });
+
+
+    // =========================================
+    // ===== Smooth scroll ============
+    // =========================================
+
+    const links = document.querySelectorAll('nav ul li a');
+
+    for (const link of links) {
+        link.addEventListener('click', smoothScroll);
+    }
+
+    function smoothScroll(e){
+        e.preventDefault();
+        const href = this.getAttribute('href');
+        document.querySelector(href).scrollIntoView({
+            behavior: 'smooth'
         });
-    </script>
+    }
+
+    // =========================================
+    // ===== Sistema desplegable ============
+    // =========================================
+
+    const toggles = document.querySelectorAll('.toggle');
+
+    toggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+            const proyecto = toggle.parentElement;
+            proyecto.classList.toggle('activo');
+        });
+    });
+
+    // =========================================
+    // ===== PARALLAX ============
+    // =========================================
+
+    window.addEventListener("scroll", () => {
+
+        const scrollY = window.scrollY;
+
+        document.querySelectorAll(".proyecto").forEach((card, index) => {
+
+            const speed = 0.2 + (index * 0.05);
+
+            card.style.backgroundPositionY = `${scrollY * speed}px`;
+
+        });
+
+    });
+
+</script>
 </body>
+    
+<div class="language-switcher">
+    <button id="btn-en" class="lang-btn active">EN</button>
+    <button id="btn-es" class="lang-btn">ES</button>
+</div>
+    
 </html>
