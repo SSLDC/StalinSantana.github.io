@@ -1,374 +1,667 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Portafolio de Stalin, desarrollador de software especializado en C#, .NET y desarrollo web.">
-<meta name="keywords" content="programador, portfolio, C#, .NET, ASP.NET, Blazor, backend">
-<title>Stalin | Desarrollador de software</title>
-<link rel="stylesheet" href="css/Style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Stalin, desarrollador de software especializado en C#, Unity y Android.">
+    <meta name="keywords" content="programador, portfolio, C#, Unity, Android">
+    <title>Stalin | Software Developer</title>
+    <link rel="stylesheet" href="css/Style.css">
+    
 </head>
-
 <body>
 
-<div class="language-switcher">
-    <button id="btn-en" class="lang-btn active">EN</button>
-    <button id="btn-es" class="lang-btn">ES</button>
-</div>
+    <div class="language-switcher">
+        <button id="btn-en" class="lang-btn active">EN</button>
+        <button id="btn-es" class="lang-btn">ES</button>
+    </div>
+    
+    <header>
+        <h1>Stalin Santana Lozano</h1>
+        <p>Software & Web Developer | Game Developer</p>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#sobreMi">Sobre Mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <h1>Stalin Santana Lozano</h1>
-    <p>Desarrollador de software y web</p>
+    <section id="sobreMi">
+        <p class="justificado">
+Hola, me llamo Stalin Santana. Soy programador junior enfocado en desarrollo de aplicaciones multiplataforma y videojuegos. Tengo experiencia trabajando con Java, C#, MySQL, HTML, CSS, motores de videojuegos y consumo de APIs REST.
 
-    <nav>
-        <ul class="nav-links">
-            <li><a href="#sobreMi">Sobre Mí</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
-</header>
+Me formé en la Escuela EDIB – Grupo Fleming, donde aprendí programación orientada a objetos y trabajé en proyectos prácticos desde cero. A partir de ahí he estado más de dos años creando proyectos propios y académicos, desarrollando sistemas con lógica compleja, control de flujo, motores de reglas, aplicaciones multiplataforma y videojuegos en Unity.
 
-<section id="sobreMi">
-    <p class="justificado">
-        Hola, me llamo Stalin Santana. Soy programador junior enfocado en desarrollo de software y aplicaciones web.
-        Tengo experiencia con C#, Java, SQL, HTML, CSS y consumo de APIs REST.
-    </p>
+Me gusta construir cosas que funcionen de verdad, no solo que se queden en teoría. He trabajado en sistemas de combate por turnos, IA con decisiones dinámicas, arquitecturas modulares y herramientas dentro del editor.
 
-    <p class="justificado">
-        Me he formado en desarrollo de software con enfoque en aplicaciones empresariales, trabajando en proyectos
-        donde he implementado lógica de negocio, estructuras modulares y sistemas completos desde cero.
-    </p>
-
-    <p class="justificado">
-        Me gusta construir sistemas funcionales y escalables, no solo teoría. He trabajado en APIs, sistemas backend,
-        arquitecturas limpias y aplicaciones conectadas a bases de datos.
-    </p>
-
-    <p class="justificado">
-        Me considero una persona constante, autodidacta y con iniciativa. Disfruto resolviendo problemas técnicos y
-        mejorando mis habilidades continuamente.
-    </p>
-</section>
-
+Me considero una persona constante, con iniciativa y capacidad de aprender por mi cuenta. Me gusta resolver problemas técnicos y enfrentar retos que me obliguen a mejorar. Trabajo bien en equipo, me adapto rápido y busco siempre aportar valor en lo que hago.
+</p>
+        
 <section id="proyectos">
-<h2>Proyectos Destacados</h2>
+    <h2>Proyectos Destacados</h2>
+    
+    <div class="proyecto" style="background-image: url('assets/Fondo__Lily.jpeg');">
+        <h3 class="toggle">Lily – Novela gráfica de naves</h3>
 
-<!-- PROYECTO 1 -->
-<div class="proyecto" style="background-image: url('assets/Fondo__Lily.jpeg');">
-    <h3 class="toggle">Sistema de gestión de contenido (CMS)</h3>
+        <div class="contenido">
 
-    <div class="contenido">
-        <p class="justificado">
-            Sistema orientado a la gestión de información y contenido estructurado, aplicando arquitectura modular
-            y separación de responsabilidades.
-        </p>
+            <p class="justificado">
+                Novela gráfica con temática de naves espaciales, combinando narrativa, estilo visual y animaciones para crear una experiencia interactiva.
+            </p>
 
-        <p class="justificado">
-            Implementación de lógica de negocio, manejo de datos, estructuras escalables y consumo de servicios.
-        </p>
+            <br>
 
-        <p class="justificado">
-            Diseño preparado para entornos empresariales con posibilidad de ampliación y mantenimiento.
-        </p>
+            <p class="justificado">
+                Implementé sistemas de diálogo, menús dinámicos y animaciones de personajes y fondos, cuidando la coherencia entre historia, ritmo y presentación visual.
+            </p>
 
-        <video controls autoplay muted loop>
-            <source src="videos/LilyVideo.mp4" type="video/mp4">
-        </video>
+            <br>
 
-        <a class="boton" href="https://github.com/SSLDC/Lily-Ship-Graphic-Novel.git" target="_blank">Ver código</a>
-    </div>
-</div>
+            <p class="justificado">
+                El proyecto incluye decisiones narrativas con impacto en la historia y una estructura modular pensada para permitir expansión futura del contenido.
+            </p>
 
-<!-- PROYECTO 2 -->
-<div class="proyecto" style="background-image: url('assets/Fondo_Unvollendet.jpeg');">
-    <h3 class="toggle">Sistema backend con lógica de negocio avanzada</h3>
+            <br>
 
-    <div class="contenido">
-        <p class="justificado">
-            Desarrollo de un sistema backend orientado a lógica empresarial compleja, gestión de estados y toma de decisiones.
-        </p>
+            <video controls autoplay muted loop>
+                <source src="videos/LilyVideo.mp4" type="video/mp4">
+            </video>
 
-        <p class="justificado">
-            Arquitectura basada en servicios, control de flujo, validaciones y diseño orientado a escalabilidad.
-        </p>
+            <a class="boton" href="https://github.com/SSLDC/Lily-Ship-Graphic-Novel.git" target="_blank">
+                Ver código
+            </a>
 
-        <p class="justificado">
-            Implementación de estructuras que permiten extender funcionalidades sin romper el sistema base.
-        </p>
+        </div>
+    </div>
 
-        <video controls autoplay muted loop>
-            <source src="videos/Unvollendet.mp4" type="video/mp4">
-        </video>
+    <div class="proyecto" style="background-image: url('assets/Fondo_Unvollendet.jpeg');">
+        <h3 class="toggle">Unvollendet – Sistema avanzado de juego por turnos</h3>
 
-        <a class="boton" href="https://github.com/SSLDC/Unvollendet-Advanced-turn-based-game-system.git" target="_blank">Ver código</a>
-    </div>
-</div>
+        <div class="contenido">
 
-<!-- PROYECTO 3 -->
-<div class="proyecto proyecto-azul">
-    <h3 class="toggle">Sistema de herramientas y arquitectura de software</h3>
+            <p class="justificado">
+                Proyecto que combina narrativa, sistemas jugables e integración 2D/3D en un entorno 2.5D. Incluye combate por turnos, IA estratégica de jefe final y múltiples finales basados en decisiones.
+            </p>
 
-    <div class="contenido">
-        <p class="justificado">
-            Desarrollo de herramientas y sistemas internos orientados a mejorar flujos de trabajo y automatización.
-        </p>
+            <br>
 
-        <p class="justificado">
-            Separación de módulos, uso de patrones de diseño y estructura limpia orientada a mantenimiento.
-        </p>
+            <p class="justificado">
+                <strong>Lo más importante del proyecto:</strong><br><br>
+                Diseñé una IA de jefe que analiza en tiempo real variables como vida, defensa, estado del combate y prioridades. No es aleatoria: evalúa el contexto completo antes de actuar y usa probabilidades controladas para generar comportamientos variables pero coherentes.
+            </p>
 
-        <p class="justificado">
-            Implementación de utilidades reutilizables para entornos de desarrollo.
-        </p>
+            <br>
 
-        <video controls autoplay muted loop>
-            <source src="videos/MovimientoFísicas.mp4" type="video/mp4">
-        </video>
+            <p class="justificado">
+                También desarrollé un sistema de turnos basado en estados, con control de transiciones, validaciones, bloqueo de entradas y ejecución asincrónica mediante coroutines. Todo el flujo está diseñado para evitar estados inválidos y mantener coherencia entre lógica, animaciones y eventos.
+            </p>
 
-        <a class="boton" href="https://github.com/SSLDC/System-of-movements-physics-and-development-of-customized-tools.git" target="_blank">Ver código</a>
-    </div>
-</div>
+            <br>
+
+            <p class="justificado">
+                Este proyecto demuestra mi capacidad para crear sistemas complejos, estructurar lógica de juego y construir soluciones modulares escalables.
+            </p>
+
+            <br>
+
+            <video controls autoplay muted loop>
+                <source src="videos/Unvollendet.mp4" type="video/mp4">
+            </video>
+
+            <a class="boton" href="https://github.com/SSLDC/Unvollendet-Advanced-turn-based-game-system.git" target="_blank">
+                Ver código
+            </a>
+
+        </div>
+    </div>
+    <div class="proyecto proyecto-azul">
+        <h3 class="toggle">Sistema de movimientos, físicas y herramientas personalizadas</h3>
+
+        <div class="contenido">
+
+            <p class="justificado">
+                Demo técnica centrada en arquitectura modular, control de estados complejos y sistemas desacoplados en Unity.
+            </p>
+
+            <br>
+
+            <p class="justificado">
+                Separé entrada, físicas, cámara y lógica de comportamiento para mantener un código escalable y organizado. Implementé patrones como Singleton y componentes reutilizables configurables desde el inspector.
+            </p>
+
+            <br>
+
+            <p class="justificado">
+                El sistema incluye estados avanzados como dash, salto variable, caída, colisiones laterales y corrección de esquinas. También incorpora control de flujo basado en eventos, interpolaciones temporizadas con coroutines y ajustes dinámicos de cámara según la velocidad.
+            </p>
+
+            <br>
+
+            <p class="justificado">
+                Además, desarrollé herramientas personalizadas en el editor de Unity para configurar cámaras y parámetros sin modificar código, mejorando el flujo de trabajo y la escalabilidad del sistema.
+            </p>
+
+            <br>
+
+            <p class="justificado">
+                Proyecto enfocado en código limpio, escalable y preparado para casos límite reales.
+            </p>
+
+            <br>
+
+            <video controls autoplay muted loop>
+                <source src="videos/MovimientoFísicas.mp4" type="video/mp4">
+            </video>
+
+            <a class="boton" href="https://github.com/SSLDC/System-of-movements-physics-and-development-of-customized-tools.git" target="_blank">
+                Ver código
+            </a>
+
+        </div>
+    </div>
+
 </section>
 
-<section id="habilidades">
-<h2>Habilidades</h2>
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <br>
+    
+        <ul class="justificado">
+    
+            <li>
+                <strong>Lenguajes de programación:</strong>
+                C#, Java, Kotlin, HTML, CSS, MySQL, JavaScript (nivel básico)
+            </li>
+    
+            <li>
+                <strong>Desarrollo de videojuegos (Unity):</strong>
+                diseño e implementación de sistemas por turnos, IA de enemigos, animaciones, interacción de menús, narrativa tipo novela gráfica y desarrollo de lógica modular de gameplay
+            </li>
+    
+            <li>
+                <strong>Desarrollo de aplicaciones y backend:</strong>
+                Android Studio, .NET con Visual Studio, Spring Boot (básico), creación y consumo de APIs REST, gestión de eventos y validaciones
+            </li>
+    
+            <li>
+                <strong>Ingeniería de software:</strong>
+                programación orientada a objetos, estructuras de datos, lógica de programación avanzada, diseño de sistemas basados en reglas y flujos de ejecución
+            </li>
+    
+            <li>
+                <strong>Control de versiones:</strong>
+                Git & GitHub para gestión de proyectos y trabajo colaborativo
+            </li>
+    
+        </ul>
+    </section>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <br>
+        <p>Email: <a href="mailto:santanalozanostalindaniel@gmail.com">santanalozanostalindaniel@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/SSLDC" target="_blank">https://github.com/SSLDC</a></p>
+        <p>Linkedin: <a href="https://www.linkedin.com/in/stalin-santana-lozano-79a490361" target="_blank">Linkedin</a></p>
+    </section>
 
-<ul class="justificado">
-    <li><strong>Lenguajes:</strong> C#, Java, HTML, CSS, SQL, JavaScript (básico)</li>
-    <li><strong>.NET:</strong> .NET Core, ASP.NET Core, Blazor, desarrollo backend y APIs REST</li>
-    <li><strong>Backend:</strong> creación de APIs, lógica de negocio, arquitectura en capas</li>
-    <li><strong>Bases de datos:</strong> MySQL, modelado de datos y consultas</li>
-    <li><strong>Software:</strong> diseño de sistemas escalables, patrones de diseño, POO</li>
-    <li><strong>Control de versiones:</strong> Git y GitHub</li>
-</ul>
-</section>
+    <footer>
+        <p>&copy; 2026 Stalin. Todos los derechos reservados.</p>
+    </footer>
 
-<section id="contacto">
-<h2>Contacto</h2>
+  <script>
 
-<p>Email: <a href="mailto:santanalozanostalindaniel@gmail.com">santanalozanostalindaniel@gmail.com</a></p>
-<p>GitHub: <a href="https://github.com/SSLDC" target="_blank">https://github.com/SSLDC</a></p>
-<p>Linkedin: <a href="https://www.linkedin.com/in/stalin-santana-lozano-79a490361" target="_blank">Linkedin</a></p>
-</section>
-
-    <footer>
-        <p>&copy; 2026 Stalin. Todos los derechos reservados.</p>
-    </footer>
-
-<script>
 document.addEventListener("DOMContentLoaded", () => {
 
-    // ======================================================
-    // =================== TRADUCCIONES =====================
-    // ======================================================
+    // ======================================================
+    // =================== TRADUCTIONS =====================
+    // ======================================================
 
-    const translations = {
-    en: {
-        nav1: "About me",
-        nav2: "Projects",
-        nav3: "Skills",
-        nav4: "Contact",
-        subtitle: "Software developer",
-        about: `
-        Hi, my name is Stalin Santana. I am a junior software developer focused on web and backend development.
-        I have experience with C#, Java, SQL, HTML, CSS and REST APIs.<br><br>
+    const translations = {
 
-        I have worked on structured software systems, backend logic, APIs and modular applications designed for scalability.<br><br>
+        // ==================================================
+        // ===================== ENGLISH ====================
+        // ==================================================
 
-        I enjoy building functional systems beyond theory, focusing on clean architecture and maintainable code.<br><br>
+        en: {
 
-        I consider myself a self-learning developer with consistency and problem-solving skills.
-        `,
-        projects: "Featured Projects",
+            // NAV
 
-        lilyTitle: "Content Management System",
-        lilyDesc1: "System focused on structured data management using modular architecture.",
-        lilyDesc2: "Implementation of business logic, data handling and scalable design.",
-        lilyDesc3: "Designed for enterprise environments with extensibility in mind.",
+            nav1: "About Me",
+            nav2: "Projects",
+            nav3: "Skills",
+            nav4: "Contact",
 
-        unTitle: "Advanced backend system",
-        unDesc1: "Backend system focused on business logic and structured workflows.",
-        unDesc2: "Layered architecture with validation and scalable design.",
-        unDesc3: "Prepared for extension and integration with external services.",
-        unDesc4: "",
+            subtitle: "Software & Web Developer | Game Developer",
 
-        moveTitle: "Software architecture & tools system",
-        moveDesc1: "Internal tools and system architecture for workflow optimization.",
-        moveDesc2: "Modular separation and clean code principles.",
-        moveDesc3: "Reusable components for development environments.",
-        moveDesc4: "",
-        moveDesc5: "",
+            // ABOUT ME
 
-        code: "View code",
-        skills: "Skills",
+            about: `
 
-        skill1: "Languages: C#, Java, HTML, CSS, SQL, JavaScript (basic)",
-        skill2: ".NET Core, ASP.NET Core, Blazor, REST APIs",
-        skill3: "Backend development, business logic, layered architecture",
-        skill4: "Databases: MySQL, data modeling",
-        skill5: "Git & GitHub for version control",
+Hello, my name is Stalin Santana. I am a junior programmer focused on cross-platform application and video game development. I have experience working with Java, C#, MySQL, HTML, and CSS.
 
-        contact: "Contact",
-        rights: "All rights reserved."
-    },
+I studied at EDIB – Grupo Fleming, where I learned object-oriented programming, REST API integration, and worked on practical projects from scratch.
 
-    es: {
-        nav1: "Sobre Mí",
-        nav2: "Proyectos",
-        nav3: "Habilidades",
-        nav4: "Contacto",
-        subtitle: "Desarrollador de software",
+Since then, I have spent more than two years creating personal and academic projects, developing systems with complex logic, flow control, rule engines, cross-platform applications, and Unity video games.
 
-        about: `
-        Hola, me llamo Stalin Santana. Soy programador junior enfocado en desarrollo de software y aplicaciones web.
-        Tengo experiencia con C#, Java, SQL, HTML, CSS y APIs REST.<br><br>
+I enjoy building systems that truly work beyond theory. I have worked on turn-based combat systems, AI with dynamic decision-making, modular architectures, and custom editor tools.
 
-        He trabajado en sistemas backend, lógica de negocio, APIs y aplicaciones modulares escalables.<br><br>
+I consider myself a disciplined and proactive person with strong self-learning skills. I enjoy solving technical problems and facing challenges that push me to improve constantly. I work well in teams, adapt quickly, and always try to provide value in everything I do.
 
-        Me gusta construir sistemas funcionales con arquitectura limpia y mantenible.<br><br>
+`,
 
-        Me considero autodidacta, constante y enfocado en resolver problemas.
-        `,
+            // PROJECTS
 
-        projects: "Proyectos destacados",
+            projects: "Featured Projects",
 
-        lilyTitle: "Sistema de gestión de contenido",
-        lilyDesc1: "Sistema orientado a gestión de datos con arquitectura modular.",
-        lilyDesc2: "Implementación de lógica de negocio y manejo de información.",
-        lilyDesc3: "Diseñado para entornos empresariales escalables.",
+            // LILY
 
-        unTitle: "Sistema backend avanzado",
-        unDesc1: "Sistema backend enfocado en lógica de negocio.",
-        unDesc2: "Arquitectura en capas con validación y escalabilidad.",
-        unDesc3: "Preparado para integración con servicios externos.",
-        unDesc4: "",
+            lilyTitle: "Lily – Space Graphic Novel",
 
-        moveTitle: "Arquitectura de software y herramientas",
-        moveDesc1: "Herramientas internas para optimización de procesos.",
-        moveDesc2: "Arquitectura modular y código limpio.",
-        moveDesc3: "Componentes reutilizables para desarrollo.",
-        moveDesc4: "",
-        moveDesc5: "",
+            lilyDesc1: `
+Graphic novel project with a sci-fi spaceship setting that combines narrative, visual design, animations, and interactive systems to create an immersive experience.
+`,
 
-        code: "Ver código",
-        skills: "Habilidades",
+            lilyDesc2: `
+Implemented dialogue systems, dynamic menus, character animations, transitions, and animated backgrounds while maintaining consistency between storytelling, pacing, and visual presentation.
+`,
 
-        skill1: "Lenguajes: C#, Java, HTML, CSS, SQL, JavaScript (básico)",
-        skill2: ".NET Core, ASP.NET Core, Blazor, APIs REST",
-        skill3: "Desarrollo backend y lógica de negocio",
-        skill4: "Bases de datos: MySQL",
-        skill5: "Git y GitHub",
+            lilyDesc3: `
+The project also includes narrative choices with branching consequences and a modular structure designed to support future content expansion and scalability.
+`,
 
-        contact: "Contacto",
-        rights: "Todos los derechos reservados."
-    }
-};
+            // UNVOLLENDET
 
-    // ======================================================
-    // ================= TRADUCCIÓN DINÁMICA ================
-    // ======================================================
+            unTitle: "Unvollendet – Advanced Turn-Based Game System",
 
-    function changeLanguage(lang) {
-        const t = translations[lang];
+            unDesc1: `
+Project that combines narrative systems, gameplay mechanics, and 2D/3D integration inside a 2.5D environment. Includes turn-based combat, strategic boss AI, and multiple endings based on player decisions.
+`,
 
-        // NAV
-        const nav = document.querySelectorAll(".nav-links a");
-        nav[0].innerHTML = t.nav1;
-        nav[1].innerHTML = t.nav2;
-        nav[2].innerHTML = t.nav3;
-        nav[3].innerHTML = t.nav4;
+            unDesc2: `
+Most important feature of the project:
 
-        // SUBTITLES
-        document.querySelector("header p").innerHTML = t.subtitle;
-        document.querySelector("#sobreMi .justificado").innerHTML = t.about;
-        document.querySelector("#proyectos h2").innerHTML = t.projects;
+Designed a boss AI capable of analyzing variables in real time such as health, defense, combat states, priorities, and contextual conditions. The system is not purely random — it evaluates the entire combat situation before making decisions and uses controlled probabilities to create dynamic but coherent behavior.
+`,
 
-        // PROYECTOS
-        const proyectos = document.querySelectorAll(".proyecto");
+            unDesc3: `
+I also developed a state-based turn system with transition control, validations, input blocking, and asynchronous execution using coroutines. The entire gameplay flow was designed to prevent invalid states and maintain synchronization between logic, animations, and events.
+`,
 
-        // LILY
-        proyectos[0].querySelector(".toggle").innerHTML = t.lilyTitle;
-        const lilyP = proyectos[0].querySelectorAll("p");
-        lilyP[0].innerHTML = t.lilyDesc1;
-        lilyP[1].innerHTML = t.lilyDesc2;
-        lilyP[2].innerHTML = t.lilyDesc3;
+            unDesc4: `
+This project demonstrates my ability to design scalable gameplay systems, structure complex game logic, and build modular solutions prepared for real production scenarios.
+`,
 
-        // UNVOLLENDET
-        proyectos[1].querySelector(".toggle").innerHTML = t.unTitle;
-        const unP = proyectos[1].querySelectorAll("p");
-        unP[0].innerHTML = t.unDesc1;
-        unP[1].innerHTML = t.unDesc2;
-        unP[2].innerHTML = t.unDesc3;
-        unP[3].innerHTML = t.unDesc4;
+            // MOVEMENT
 
-        // MOVEMENT
-        proyectos[2].querySelector(".toggle").innerHTML = t.moveTitle;
-        const movP = proyectos[2].querySelectorAll("p");
-        movP[0].innerHTML = t.moveDesc1;
-        movP[1].innerHTML = t.moveDesc2;
-        movP[2].innerHTML = t.moveDesc3;
-        movP[3].innerHTML = t.moveDesc4;
-        movP[4].innerHTML = t.moveDesc5;
+            moveTitle: "Movement, Physics & Custom Tools System",
 
-        // BOTONES Y SKILLS
-        document.querySelectorAll(".boton").forEach(btn => btn.innerHTML = t.code);
-        document.querySelector("#habilidades h2").innerHTML = t.skills;
+            moveDesc1: `
+Technical demo focused on modular architecture, advanced state management, and decoupled systems inside Unity.
+`,
 
-        const skills = document.querySelectorAll("#habilidades li");
-        skills[0].innerHTML = t.skill1;
-        skills[1].innerHTML = t.skill2;
-        skills[2].innerHTML = t.skill3;
-        skills[3].innerHTML = t.skill4;
-        skills[4].innerHTML = t.skill5;
+            moveDesc2: `
+Separated input handling, physics, camera systems, and gameplay logic to maintain scalable and organized code architecture.
+`,
 
-        // CONTACTO / FOOTER
-        document.querySelector("#contacto h2").innerHTML = t.contact;
-        document.querySelector("footer p").innerHTML = `&copy; 2026 Stalin. ${t.rights}`;
+            moveDesc3: `
+The system includes advanced movement states such as dash mechanics, variable jump height, falling states, side collisions, corner correction, timed interpolations using coroutines, and dynamic camera adjustments based on player velocity.
+`,
 
-        // CLASES ACTIVAS
-        document.getElementById("btn-en").classList.remove("active");
-        document.getElementById("btn-es").classList.remove("active");
-        document.getElementById(`btn-${lang}`).classList.add("active");
-    }
+            moveDesc4: `
+Additionally, I developed custom editor tools inside Unity to configure camera systems and gameplay parameters without modifying code directly.
+`,
 
-    // LISTENERS IDIOMAS
-    document.getElementById("btn-en").addEventListener("click", () => changeLanguage("en"));
-    document.getElementById("btn-es").addEventListener("click", () => changeLanguage("es"));
+            moveDesc5: `
+This project is focused on clean architecture, scalable gameplay systems, maintainability, and handling real edge-case scenarios.
+`,
 
-    // Inicialización por defecto en inglés (puedes cambiar a "es" si quieres)
-    changeLanguage("en");
+            // BUTTONS
 
-    // ======================================================
-    // ================= SCROLL & TOGGLES ===================
-    // ======================================================
+            code: "View Code",
 
-    const links = document.querySelectorAll('nav ul li a');
-    links.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const href = this.getAttribute('href');
-            document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
-        });
-    });
+            // SKILLS
 
-    const toggles = document.querySelectorAll('.toggle');
-    toggles.forEach(toggle => {
-        toggle.addEventListener('click', () => {
-            toggle.parentElement.classList.toggle('activo');
-        });
-    });
+            skills: "Skills",
 
-    // PARALLAX
-    window.addEventListener("scroll", () => {
-        const scrollY = window.scrollY;
-        document.querySelectorAll(".proyecto").forEach((card, index) => {
-            const speed = 0.15 + (index * 0.08);
-            card.style.backgroundPositionY = `${scrollY * speed}px`;
-        });
-    });
+            skill1: `
+<strong>Programming Languages:</strong>
+C#, Java, Kotlin, HTML, CSS, MySQL, JavaScript (basic level)
+`,
+
+            skill2: `
+<strong>Game Development (Unity):</strong>
+design and implementation of turn-based systems, enemy AI, gameplay state systems, animations, menu interactions, visual novel systems, and modular gameplay architecture
+`,
+
+            skill3: `
+<strong>Application & Backend Development:</strong>
+Android Studio, .NET with Visual Studio, Spring Boot (basic), REST API creation and integration, event handling, and validation systems
+`,
+
+            skill4: `
+<strong>Software Engineering:</strong>
+object-oriented programming, data structures, advanced programming logic, rule-based systems, and execution flow architecture
+`,
+
+            skill5: `
+<strong>Version Control:</strong>
+Git & GitHub for project management and collaborative development
+`,
+
+            // CONTACT
+
+            contact: "Contact",
+
+            rights: "All rights reserved."
+        },
+
+        // ==================================================
+        // ===================== ESPAÑOL ====================
+        // ==================================================
+
+        es: {
+
+            nav1: "Sobre Mí",
+            nav2: "Proyectos",
+            nav3: "Habilidades",
+            nav4: "Contacto",
+
+            subtitle: "Software & Web Developer | Game Developer",
+
+            about: `
+
+Hola, me llamo Stalin Santana. Soy programador junior enfocado en desarrollo de aplicaciones multiplataforma y videojuegos. Tengo experiencia trabajando con Java, C#, MySQL, HTML y CSS.
+
+Me formé en la Escuela EDIB – Grupo Fleming, donde aprendí programación orientada a objetos, consumo de APIs REST y trabajé en proyectos prácticos desde cero.
+
+A partir de ahí he estado más de dos años creando proyectos propios y académicos, desarrollando sistemas con lógica compleja, control de flujo, motores de reglas, aplicaciones multiplataforma y videojuegos en Unity.
+
+Me gusta construir cosas que funcionen de verdad, no solo que se queden en teoría. He trabajado en sistemas de combate por turnos, IA con decisiones dinámicas, arquitecturas modulares y herramientas dentro del editor.
+
+Me considero una persona constante, con iniciativa y capacidad de aprender por mi cuenta. Me gusta resolver problemas técnicos y enfrentar retos que me obliguen a mejorar. Trabajo bien en equipo, me adapto rápido y busco siempre aportar valor en lo que hago.
+
+`,
+
+            projects: "Proyectos Destacados",
+
+            // LILY
+
+            lilyTitle: "Lily – Novela gráfica de naves",
+
+            lilyDesc1: `
+Novela gráfica con temática de naves espaciales, combinando narrativa, estilo visual y animaciones para crear una experiencia interactiva.
+`,
+
+            lilyDesc2: `
+Implementé sistemas de diálogo, menús dinámicos y animaciones de personajes y fondos, cuidando la coherencia entre historia, ritmo y presentación visual.
+`,
+
+            lilyDesc3: `
+El proyecto incluye decisiones narrativas con impacto en la historia y una estructura modular pensada para permitir expansión futura del contenido.
+`,
+
+            // UNVOLLENDET
+
+            unTitle: "Unvollendet – Sistema avanzado de juego por turnos",
+
+            unDesc1: `
+Proyecto que combina narrativa, sistemas jugables e integración 2D/3D en un entorno 2.5D. Incluye combate por turnos, IA estratégica de jefe final y múltiples finales basados en decisiones.
+`,
+
+            unDesc2: `
+Lo más importante del proyecto:
+
+Diseñé una IA de jefe que analiza en tiempo real variables como vida, defensa, estado del combate y prioridades. No es aleatoria: evalúa el contexto completo antes de actuar y usa probabilidades controladas para generar comportamientos variables pero coherentes.
+`,
+
+            unDesc3: `
+También desarrollé un sistema de turnos basado en estados, con control de transiciones, validaciones, bloqueo de entradas y ejecución asincrónica mediante coroutines.
+`,
+
+            unDesc4: `
+Este proyecto demuestra mi capacidad para crear sistemas complejos, estructurar lógica de juego y construir soluciones modulares escalables.
+`,
+
+            // MOVEMENT
+
+            moveTitle: "Sistema de movimientos, físicas y herramientas personalizadas",
+
+            moveDesc1: `
+Demo técnica centrada en arquitectura modular, control de estados complejos y sistemas desacoplados en Unity.
+`,
+
+            moveDesc2: `
+Separé entrada, físicas, cámara y lógica de comportamiento para mantener un código escalable y organizado.
+`,
+
+            moveDesc3: `
+El sistema incluye estados avanzados como dash, salto variable, caída, colisiones laterales y corrección de esquinas.
+`,
+
+            moveDesc4: `
+Además, desarrollé herramientas personalizadas dentro del editor de Unity para mejorar el flujo de trabajo.
+`,
+
+            moveDesc5: `
+Proyecto enfocado en código limpio, escalable y preparado para casos límite reales.
+`,
+
+            code: "Ver código",
+
+            // SKILLS
+
+            skills: "Habilidades",
+
+            skill1: `
+<strong>Lenguajes de programación:</strong>
+C#, Java, Kotlin, HTML, CSS, MySQL, JavaScript (nivel básico)
+`,
+
+            skill2: `
+<strong>Desarrollo de videojuegos (Unity):</strong>
+diseño e implementación de sistemas por turnos, IA de enemigos, gameplay modular, narrativa tipo novela gráfica y arquitectura escalable
+`,
+
+            skill3: `
+<strong>Desarrollo de aplicaciones y backend:</strong>
+Android Studio, .NET con Visual Studio, Spring Boot (básico), APIs REST, validaciones y gestión de eventos
+`,
+
+            skill4: `
+<strong>Ingeniería de software:</strong>
+programación orientada a objetos, estructuras de datos, lógica avanzada y sistemas basados en reglas
+`,
+
+            skill5: `
+<strong>Control de versiones:</strong>
+Git & GitHub para gestión de proyectos y trabajo colaborativo
+`,
+
+            contact: "Contacto",
+
+            rights: "Todos los derechos reservados."
+        }
+    };
+
+    // ======================================================
+    // ================= Language change ===================
+    // ======================================================
+
+    function changeLanguage(lang){
+
+        const t = translations[lang];
+
+        // NAV
+
+        const nav = document.querySelectorAll(".nav-links a");
+
+        nav[0].innerHTML = t.nav1;
+        nav[1].innerHTML = t.nav2;
+        nav[2].innerHTML = t.nav3;
+        nav[3].innerHTML = t.nav4;
+
+        // SUBTITLE
+
+        document.querySelector("header p").innerHTML = t.subtitle;
+
+        // ABOUT
+
+        document.querySelector("#sobreMi .justificado").innerHTML = t.about;
+
+        // PROJECT TITLE
+
+        document.querySelector("#proyectos h2").innerHTML = t.projects;
+
+        // PROJECTS
+
+        const proyectos = document.querySelectorAll(".proyecto");
+
+        // ===== LILY =====
+
+        proyectos[0].querySelector(".toggle").innerHTML = t.lilyTitle;
+
+        const lilyP = proyectos[0].querySelectorAll("p");
+
+        lilyP[0].innerHTML = t.lilyDesc1;
+        lilyP[1].innerHTML = t.lilyDesc2;
+        lilyP[2].innerHTML = t.lilyDesc3;
+
+        // ===== UNVOLLENDET =====
+
+        proyectos[1].querySelector(".toggle").innerHTML = t.unTitle;
+
+        const unP = proyectos[1].querySelectorAll("p");
+
+        unP[0].innerHTML = t.unDesc1;
+        unP[1].innerHTML = t.unDesc2;
+        unP[2].innerHTML = t.unDesc3;
+        unP[3].innerHTML = t.unDesc4;
+
+        // ===== MOVEMENT =====
+
+        proyectos[2].querySelector(".toggle").innerHTML = t.moveTitle;
+
+        const movP = proyectos[2].querySelectorAll("p");
+
+        movP[0].innerHTML = t.moveDesc1;
+        movP[1].innerHTML = t.moveDesc2;
+        movP[2].innerHTML = t.moveDesc3;
+        movP[3].innerHTML = t.moveDesc4;
+        movP[4].innerHTML = t.moveDesc5;
+
+        // BUTTONS
+
+        document.querySelectorAll(".boton").forEach(btn => {
+            btn.innerHTML = t.code;
+        });
+
+        // SKILLS TITLE
+
+        document.querySelector("#habilidades h2").innerHTML = t.skills;
+
+        // SKILLS CONTENT
+
+        const skills = document.querySelectorAll("#habilidades li");
+
+        skills[0].innerHTML = t.skill1;
+        skills[1].innerHTML = t.skill2;
+        skills[2].innerHTML = t.skill3;
+        skills[3].innerHTML = t.skill4;
+        skills[4].innerHTML = t.skill5;
+
+        // CONTACT
+
+        document.querySelector("#contacto h2").innerHTML = t.contact;
+
+        // FOOTER
+
+        document.querySelector("footer p").innerHTML =
+            `&copy; 2026 Stalin. ${t.rights}`;
+
+        // ACTIVE BUTTONS
+
+        document.getElementById("btn-en").classList.remove("active");
+        document.getElementById("btn-es").classList.remove("active");
+
+        document.getElementById(`btn-${lang}`).classList.add("active");
+    }
+
+    document.getElementById("btn-en")
+        .addEventListener("click", () => {
+
+        changeLanguage("en");
+
+    });
+
+    document.getElementById("btn-es")
+        .addEventListener("click", () => {
+
+        changeLanguage("es");
+
+    });
+
+    changeLanguage("en");
+
+    // ======================================================
+    // ================= SMOOTH SCROLL ======================
+    // ======================================================
+
+    const links = document.querySelectorAll('nav ul li a');
+
+    links.forEach(link => {
+
+        link.addEventListener('click', function(e){
+
+            e.preventDefault();
+
+            const href = this.getAttribute('href');
+
+            document.querySelector(href).scrollIntoView({
+                behavior:'smooth'
+            });
+
+        });
+
+    });
+
+    const toggles = document.querySelectorAll('.toggle');
+
+    toggles.forEach(toggle => {
+
+        toggle.addEventListener('click', () => {
+
+            const proyecto = toggle.parentElement;
+
+            proyecto.classList.toggle('activo');
+
+        });
+
+    });
+
+    // ======================================================
+    // ================= PARALLAX ===========================
+    // ======================================================
+
+    window.addEventListener("scroll", () => {
+
+        const scrollY = window.scrollY;
+
+        document.querySelectorAll(".proyecto")
+            .forEach((card, index) => {
+
+            const speed = 0.15 + (index * 0.08);
+
+            card.style.backgroundPositionY =
+                `${scrollY * speed}px`;
+
+        });
+
+    });
+
 });
+
 </script>
 </body>
 </html>
