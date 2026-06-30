@@ -411,6 +411,10 @@ body{
     animation:fadeInBody 1.5s ease;
 }
 
+section {
+    scroll-margin-top: 90px;
+}
+
 @keyframes fadeInBody{
 
     from{
